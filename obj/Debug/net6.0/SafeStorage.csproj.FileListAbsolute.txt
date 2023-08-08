@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\bin\Debug\net6.0\SafeStorage.exe
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\bin\Debug\net6.0\SafeStorage.deps.json
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\bin\Debug\net6.0\SafeStorage.runtimeconfig.json
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\bin\Debug\net6.0\SafeStorage.dll
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\bin\Debug\net6.0\SafeStorage.pdb
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.dll
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\refint\SafeStorage.dll
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.pdb
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\SafeStorage.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\SafeStorage\SafeStorage\obj\Debug\net6.0\ref\SafeStorage.dll
