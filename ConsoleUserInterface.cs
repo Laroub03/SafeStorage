@@ -21,6 +21,11 @@ namespace SafeStorage
             _passwordValidator = passwordValidator;
         }
 
+        private void HandleException(Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+        }
+
         // Helper method to convert base64 string to byte array
         private byte[] ConvertBase64ToBytes(string base64)
         {

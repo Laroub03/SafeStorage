@@ -40,8 +40,15 @@ namespace SafeStorage
     {
         public byte[] GenerateKey(string password, byte[] salt, int iterations)
         {
-            using var pbkdf2 = new Rfc2898DeriveBytes(password, salt, iterations);
-            return pbkdf2.GetBytes(32);
+            try
+            {
+                using var pbkdf2 = new Rfc2898DeriveBytes(password, salt, iterations);
+                return pbkdf2.GetBytes(32);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error generating key.", ex);
+            }
         }
     }
 
@@ -57,12 +64,20 @@ namespace SafeStorage
 
         public bool ValidatePassword(string originalPassword, string storedSaltBase64, string storedKeyBase64, int iterations)
         {
-            byte[] storedSalt = Convert.FromBase64String(storedSaltBase64);
-            byte[] storedKey = Convert.FromBase64String(storedKeyBase64);
+            try
+            {
+                byte[] storedSalt = Convert.FromBase64String(storedSaltBase64);
+                byte[] storedKey = Convert.FromBase64String(storedKeyBase64);
 
-            byte[] generatedKey = _keyGenerator.GenerateKey(originalPassword, storedSalt, iterations);
+                byte[] generatedKey = _keyGenerator.GenerateKey(originalPassword, storedSalt, iterations);
 
-            return CompareByteArrays(storedKey, generatedKey);
+                return CompareByteArrays(storedKey, generatedKey);
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return false;
+            }
         }
 
         private static bool CompareByteArrays(byte[] array1, byte[] array2)
